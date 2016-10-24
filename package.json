@@ -18,7 +18,7 @@
   "homepage": "https://github.com/YanLobat/Country-List#readme",
   "dependencies": {
     "angular": "1.4.8",
-    "angular-route": "1.4.0",
+    "angular-route": "1.4.0"
   },
   "devDependencies": {
     "gulp-webserver": "^0.9.1",
