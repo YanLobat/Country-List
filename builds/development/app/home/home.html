@@ -1,0 +1,7 @@
+<div class="row">
+    <h1>Countries List</h1>
+
+    <ol >
+    	<li ng-repeat="country in vm.countries"><a href="/country/{{country.country.value | split:'/':4}}"> {{country.countryLabel.value}}</a></li>
+    </ol>
+</div>

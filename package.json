@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/YanLobat/Country-List#readme",
   "dependencies": {
-    "angular": "^1.4.8",
-    "gulp-webserver": "^0.9.1"
+    "angular": "1.4.8",
+    "angular-route": "1.4.0",
   },
   "devDependencies": {
+    "gulp-webserver": "^0.9.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0"
   }

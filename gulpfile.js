@@ -2,14 +2,14 @@
 
 const gulp = require('gulp'),
     webserver = require('gulp-webserver'),
-    concat = require('gulp-concat'),
+    concat = require('gulp-concat');
     
 const nm = './node_modules/';
 
 gulp.task('js', function() {
   gulp.src('builds/development/app/**/*.js')
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('builds/dist/app/'))
+    .pipe(gulp.dest('builds/dist/app/'));
 });
 
 gulp.task('html', function() {
@@ -26,10 +26,13 @@ gulp.task('watch', function() {
 gulp.task('libs', function() {
 
 
-gulp.src([nm+'angular/angular.min.js',
-          ])
-      .pipe(concat('angular.concat.js'))
-      .pipe(gulp.dest('./builds/dist/libs/angular/'));
+  gulp.src([nm+'angular/angular.js',
+            nm+'wikidata-sdk/dist/wikidata-sdk.js',
+            nm+'angular-route/angular-route.js',
+            'builds/development/lib/*.js'
+        ])
+    .pipe(concat('angular.concat.js'))
+    .pipe(gulp.dest('./builds/dist/libs/'));
 });
 
 gulp.task('webserver', function() {

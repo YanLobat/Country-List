@@ -1,0 +1,15 @@
+<div class="row">
+    <h1>{{vm.country.countryLabel.value}}</h1>
+    <p> Capital: {{vm.country.capitalLabel.value}}</p>
+    <p> Language: {{vm.country.langLabel.value}}</p>
+	<p> Flag: </p>
+	<img src ="{{vm.country.flag.value}}">
+	<h2> Borders share:</h2>
+    <ol >
+    	<li ng-repeat="border in vm.country.borders"> {{border.bordersLabel.value}}</li>
+    </ol>
+    <h2> Regions list: </h2>
+    <ul>
+    	<li ng-repeat="region in vm.country.regions"><a href="/region/{{region.reg.value | split:'/':4}}"> {{region.regLabel.value}}</a></li>
+    </ul>
+</div>
