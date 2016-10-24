@@ -31,7 +31,6 @@ gulp.task('libs', function() {
             nm+'angular-route/angular-route.js',
             'builds/development/lib/*.js'
         ])
-    .pipe(concat('angular.concat.js'))
     .pipe(gulp.dest('./builds/dist/libs/'));
 });
 
